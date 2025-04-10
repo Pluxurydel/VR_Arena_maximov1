@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель администратора</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<header>
+    <div class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-elem">+79513545421</li>
+            <div class="search">
+                <a href="admin.html">
+                    <img src="img/user.png" alt="user" class="user">
+                </a>
+            </div>
+        </ul>
+    </div>
+</header>
+<div class="container">
+    <h1>Панель администратора</h1>
+    <div id="admin-requests"></div>
+    <script src="common.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderRequests('admin-requests');
+        });
+    </script>
+</div>
+</body>
+</html>

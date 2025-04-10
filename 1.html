@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание заявки</title>
+    <link href="css/1.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-elem">+79513545421</li>
+            <div class="search">
+                <a href="4.html">
+                    <img src="img/user.png" alt="user" class="user">
+                </a>
+            </div>
+        </ul>
+    </div>
+</header>
+<div class="container">
+    <h1>Создание заявки</h1>
+    <form id="request-form">
+        <label for="contact">Контактные данные</label>
+        <input type="text" id="contact" name="contact" placeholder="Введите ваш телефон" required>
+        <label for="date">Желаемая дата</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Желаемое время</label>
+        <input type="time" id="time" name="time" required>
+        <label for="service">Вид услуги</label>
+        <select id="service" name="service" required>
+            <option value="">Выберите услугу</option>
+            <option value="Игра на 4">Игра на 4</option>
+            <option value="Игра на 2">Игра на 2</option>
+            <option value="Игра на 10+ человек">Игра на 10+ человек</option>
+            <option value="Детские игры">Детские игры</option>
+        </select>
+        <label for="payment">Тип оплаты</label>
+        <select id="payment" name="payment" required>
+            <option value="">Выберите тип оплаты</option>
+            <option value="Наличные">Наличные</option>
+            <option value="Банковская карта">Банковская карта</option>
+        </select>
+        <button type="submit" class="btn-submit">Отправить заявку</button>
+    </form>
+    <script src="common.js"></script>
+    <script src="1.js"></script>
+</div>
+</body>
+</html>

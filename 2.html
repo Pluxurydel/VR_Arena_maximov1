@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои заявки</title>
+    <link href="css/2.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="nav-bar">
+        <ul class="nav-menu">
+            <li class="nav-elem">+79513545421</li>
+            <div class="search">
+                <a href="4.html">
+                  <img src="img/user.png" alt="user" class="user">
+                </a>
+            </div>
+        </ul>
+    </div>
+</header>
+<div class="container">
+    <button class="btn" onclick="window.location.href='1.html'">Создать заявку</button>
+    <h2>Мои заявки</h2>
+    <div id="requests"></div>
+    <script src="common.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Загрузка 2.html"); 
+            renderRequests('requests');
+        });
+    </script>
+</div>
+</body>
+</html>
