@@ -1,0 +1,98 @@
+
+
+body {
+    font-family: HelveticaNeue;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #004c9c;
+    text-align: center;
+
+  
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #fafafa;
+  
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 1256px;
+    margin: 20px auto 0;
+    height: 56px;
+}
+
+
+
+.nav-bar {
+	display: flex;
+	position: relative;
+	left: 1040px;
+	width: 454px;
+}
+
+.nav-menu {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+}
+
+.nav-elem {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav-elem::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.5px;
+  background-color: #1B1A1A;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+	transition: transform 0.3s ease; 
+}
+
+.nav-elem:hover::before {
+  transform: scaleX(1);
+}
+.registration-link {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Сохраняем цвет текста */
+}
+
+.registration-link:visited {
+    color: inherit; /* Сохраняем цвет текста после посещения */
+}
+
+.registration-link:hover {
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+    color: inherit; /* Сохраняем цвет текста при наведении */
+}
+
+.registration-link:active {
+    color: inherit; /* Сохраняем цвет текста при клике */
+}
+
+
+.container 
+{ width: 80%; 
+  margin: auto; 
+  padding: 20px;
+ }
+.btn { background: white;
+   color: black;
+    padding: 10px 20px;
+     border: none; 
+     border-radius: 5px;
+      cursor: pointer; 
+      margin: 5px; 
+    }
+.request-list { background: #fff; padding: 20px; border-radius: 10px; color: #000; margin-top: 20px; }
+.request { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #ddd; }
+.accepted { color: blue; }
